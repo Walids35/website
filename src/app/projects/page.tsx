@@ -1,5 +1,5 @@
 import { projects } from "@/data/projects"
-import { calistoga } from "../layout"
+import { calistoga } from "@/fonts/calistoga"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"

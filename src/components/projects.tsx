@@ -1,4 +1,4 @@
-import { calistoga } from "@/app/layout";
+import { calistoga } from "@/fonts/calistoga";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { projects } from "@/data/projects";

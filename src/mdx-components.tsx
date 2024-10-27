@@ -1,7 +1,7 @@
 import type { MDXComponents } from 'mdx/types'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
-import { calistoga } from './app/layout'
+import { calistoga } from '@/fonts/calistoga'
  
 export default function useMDXComponents(components: MDXComponents): MDXComponents {
   return {

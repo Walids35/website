@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { calistoga } from "./layout";
+import { calistoga } from "@/fonts/calistoga";
 import { Button } from "@/components/ui/button";
 
 export default function NotFound() {

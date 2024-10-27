@@ -1,5 +1,5 @@
 import { Input } from "@/components/ui/input";
-import { calistoga } from "../layout";
+import { calistoga } from "@/fonts/calistoga";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 import ContactForm from "@/components/form";

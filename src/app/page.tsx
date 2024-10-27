@@ -1,4 +1,4 @@
-import { calistoga } from "./layout";
+import { calistoga } from "@/fonts/calistoga";
 import Image from "next/image";
 import { ArrowDownRight, FileUp, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
