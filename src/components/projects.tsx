@@ -9,7 +9,7 @@ import { Figma, Github, Globe } from "lucide-react";
 const Projects = () => {
   return (
     <section className="flex flex-col gap-8">
-      <div className={`flex justify-between`}>
+      <div className={`flex justify-between items-center`}>
         <h2 className={`${calistoga.className} text-3xl`}>Featured Projects</h2>
         <Link href={"/projects"}>
           <Button className="dark:text-gray-400" variant={"link"}>
