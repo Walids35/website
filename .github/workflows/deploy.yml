@@ -41,5 +41,6 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/personal-website:latest
             cd $COMPOSE_PATH
             docker compose down
+            docker compose pull
             docker compose up --build -d
           EOF
