@@ -2,6 +2,8 @@ name: CI/CD Pipeline
 
 on:
   push:
+    branches:
+      - master
 
 jobs:
   build-and-deploy:
@@ -35,7 +37,8 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh -o StrictHostKeyChecking=no $VPS_USER@$VPS_HOST << 'EOF'
-            docker pull ${{ secrets.DOCKER_USERNAME }}/my-app:latest
+            docker pull ${{ secrets.DOCKER_USERNAME }}/personal-website:latest
             cd $COMPOSE_PATH
             docker-compose down
-            docker-compose up -d
+            docker-compose up -d 
+          EOF
