@@ -15,7 +15,7 @@ export default function Home() {
             <h1
               className={`${calistoga.className} text-5xl dark:text-white`}
             >
-              hi walid here &#128527;.
+              hi walidd here &#128527;
             </h1>
             <p className="max-w-lg leading-5">
               21-year-old software engineer from Tunisia TN <br></br> <br></br>{" "}
