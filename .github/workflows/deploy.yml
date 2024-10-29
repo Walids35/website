@@ -24,8 +24,8 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/personal-website:latest .
-          docker push ${{ secrets.DOCKER_USERNAME }}/personal-website:latest
+          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/personal-website:latest .
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/personal-website:latest
 
       - name: SSH to VPS and Deploy
         env:
@@ -37,7 +37,7 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh -o StrictHostKeyChecking=no $VPS_USER@$VPS_HOST << 'EOF'
-            docker pull ${{ secrets.DOCKER_USERNAME }}/personal-website:latest
+            docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/personal-website:latest
             cd $COMPOSE_PATH
             docker-compose down
             docker-compose up -d 
