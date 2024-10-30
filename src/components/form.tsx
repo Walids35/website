@@ -34,46 +34,45 @@ const ContactForm = () => {
   function onSubmit(data: z.infer<typeof formSchema>) {
     console.log(data);
     const formData = new FormData();
-    formData.append('email', data.email);
-    formData.append('name', data.name);
-    formData.append('message', data.message);
+    formData.append("email", data.email);
+    formData.append("name", data.name);
+    formData.append("message", data.message);
 
-    formData.append('service_id', process.env.NEXT_PUBLIC_SERVICE_ID || '');
-    formData.append('template_id', process.env.NEXT_PUBLIC_TEMPLATE_ID || '');
-    formData.append('user_id', process.env.NEXT_PUBLIC_USER_ID || '');
+    formData.append("service_id", process.env.NEXT_PUBLIC_SERVICE_ID || "");
+    formData.append("template_id", process.env.NEXT_PUBLIC_TEMPLATE_ID || "");
+    formData.append("user_id", process.env.NEXT_PUBLIC_USER_ID || "");
 
-    fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
-        method: 'POST',
-        body: formData
+    fetch("https://api.emailjs.com/api/v1.0/email/send-form", {
+      method: "POST",
+      body: formData,
+    })
+      .then(function (response) {
+        if (response.ok) {
+          alert("Your message has been sent successfully");
+        } else {
+          return response.json().then((errorData) => {
+            throw new Error(JSON.stringify(errorData));
+          });
+        }
       })
-      .then(function(response) {
-          
-          if (response.ok) {
-              alert('Your message has been sent successfully');
-          } else {
-              return response.json().then(errorData => { 
-                  throw new Error(JSON.stringify(errorData)); 
-              });
-          }
-      })
-      .catch(function(error) {
-          alert('Oops... ' + error.message);
+      .catch(function (error) {
+        alert("Oops... " + error.message);
       });
-      form.reset();
+    form.reset();
   }
 
   return (
     <Form {...form}>
       <form ref={f} onSubmit={form.handleSubmit(onSubmit)}>
-        <div className="flex flex-col gap-5">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="flex flex-col gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="col-span-2 md:col-span-1">
                   <FormControl>
-                    <Input className="" placeholder="Name" {...field} />
+                    <Input placeholder="Name" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -83,7 +82,7 @@ const ContactForm = () => {
               control={form.control}
               name="email"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="col-span-2 md:col-span-1">
                   <FormControl>
                     <Input className="" placeholder="Email" {...field} />
                   </FormControl>
