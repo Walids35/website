@@ -4,11 +4,11 @@ import { Moon, Sun } from "lucide-react";
 import Link from "next/link";
 
 const NavBar = () => {
-  const buttonStyle = "hover:text-white duration-300 transition-all";
+  const buttonStyle = "dark:hover:text-white text-black hover:text-gray-500 duration-300 transition-all";
   const [theme, toggleTheme] = useDarkMode() as [string, () => void];
 
   return (
-    <div className="w-full text-gray-400 sticky top-0 z-50 bg-background/75 py-8 backdrop-blur-sm">
+    <nav className="w-full sticky top-0 z-50 bg-background/75 py-8 backdrop-blur-sm">
       <div className="flex items-center justify-between">
       <div className="flex gap-4 sm:gap-8">
         <Link className={buttonStyle} href={"/"}>
@@ -32,7 +32,7 @@ const NavBar = () => {
         )}
       </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
