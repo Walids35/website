@@ -1,8 +1,13 @@
 import { useEffect, useState } from 'react';
 
 export const useDarkMode = () => {
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('theme') || 'dark';
+    }
+    return 'dark'; // Default to dark if window is undefined (SSR)
+  });
   
-  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -17,7 +22,9 @@ export const useDarkMode = () => {
       } else {
         root.classList.remove('dark');
       }
-      localStorage.setItem('theme', theme);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('theme', theme);
+      }
     }
   }, [theme, isMounted]);
 
