@@ -1,19 +1,13 @@
 import { useEffect, useState } from 'react';
 
 export const useDarkMode = () => {
-  const [theme, setTheme] = useState('light'); // Default to light theme
+  
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
-
-  useEffect(() => {
-    if (isMounted) {
-      const savedTheme = localStorage.getItem('theme') || 'light';
-      setTheme(savedTheme);
-    }
-  }, [isMounted]);
 
   useEffect(() => {
     if (isMounted) {
