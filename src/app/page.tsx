@@ -58,7 +58,7 @@ export default function Home() {
           </div>
           <div className="w-40 h-40 relative">
             <Image
-              className="rounded-md absolute object-cover"
+              className="rounded-md absolute object-cover object-center"
               alt="photo"
               src={"/image2.jpg"}
               fill

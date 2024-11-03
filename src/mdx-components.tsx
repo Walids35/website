@@ -67,7 +67,7 @@ export default function useMDXComponents(components: MDXComponents): MDXComponen
         />
       ),
       ul: ({ className, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
-        <ul style={{listStyle:"inside"}} className={cn("my-6 ml-6 list-disc", className)} {...props} />
+        <ul style={{listStyle:""}} className={cn("my-6 ml-6 list-disc", className)} {...props} />
       ),
       ol: ({ className, ...props }: React.HTMLAttributes<HTMLOListElement>) => (
         <ol className={cn("my-6 ml-6 list-decimal", className)} {...props} />
@@ -87,7 +87,7 @@ export default function useMDXComponents(components: MDXComponents): MDXComponen
         ...props
       }: React.ImgHTMLAttributes<HTMLImageElement>) => (
         // eslint-disable-next-line @next/next/no-img-element
-        <img className={cn("rounded-md", className)} alt={alt} {...props} />
+        <img className={cn("rounded-md my-10", className)} alt={alt} {...props} />
       ),
       hr: ({ ...props }: React.HTMLAttributes<HTMLHRElement>) => (
         <hr className="my-4 md:my-8" {...props} />

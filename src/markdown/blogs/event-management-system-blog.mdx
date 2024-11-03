@@ -1,0 +1,84 @@
+---
+title: "Building an Efficient Event Management System with Orange Digital Center"
+description: "Learn how we designed and developed an innovative event management system in collaboration with Orange Digital Center Tunis, streamlining event planning, attendee management, and feedback collection."
+date: "May 15, 2024"
+---
+
+## Introduction
+
+Event management can be a logistical challenge, with endless spreadsheets, manual check-ins, and tracking data across platforms. 
+To solve these issues, I had the privilege of working on an innovative project in collaboration with **Orange Digital Center Tunis**. 
+Together with my talented team **Amine Braham, Sahar Sarraj and Ahmed Chelly,** we designed and developed an event management system aimed at streamlining event planning, 
+attendee management, and feedback collection.
+
+## Identifying the Problem
+
+Our project began by addressing the pain points of traditional event management—namely, inefficiencies due to manual processes, 
+scattered data, and communication delays. Many organizations face reduced attendance and wasted resources because of outdated approaches 
+to event management. Our goal was to create a digital solution that would offer Orange Digital Center a unified platform to manage 
+all aspects of their events with greater ease, security, and scalability.
+
+In the Identifying the Problem phase, we used various diagrams to analyze and outline the system’s requirements, processes, and user interactions in detail. These diagrams served as essential tools for understanding both the functional and non-functional needs of the system, ensuring a comprehensive design approach. Here’s a closer look at the key diagrams we utilized:
+
+The use case diagrams provided an overview of the interactions between users and the system, helping us define core functionalities and user requirements. This diagram highlighted key actors, including event managers, desk agents, and super admins, showing how each interacted with different system modules.
+![use case diagram](/usecase.png)
+
+Activity diagrams captured the workflow and sequence of actions within the system, helping the team understand the step-by-step processes involved in each use case.
+We created specific activity diagrams for critical functions such as User Login, Attendee List Upload, QR Code Scanning, and Sending Email Invites.
+![use case diagram](/diagrams/activity-diagram.PNG)
+
+We created class diagrams to define the relationships and attributes of the primary classes in the system. This diagram outlined entities such as Event, User, Attendee, and Evaluation Form, specifying attributes and associations among them.
+The class diagram helped us better understand data organization, relationships, and how each class interacts within the system’s architecture. By mapping these relationships, we could design the database structure more effectively, ensuring data integrity and efficient data retrieval.
+![use case diagram](/diagrams/CLASSDIAGRAM.PNG)
+
+## The Solution: A Robust Event Management System
+
+Our solution was a multi-layered system comprising a web-based dashboard for event managers and a mobile application for event 
+check-ins and on-site management. Here’s a breakdown of the features and technology stack:
+
+- **Event Dashboard**: A web application built with React.js, TypeScript, and Tailwind CSS. It allows event managers to create, 
+  schedule, and manage events. Through this dashboard, users can upload attendee lists, send email invitations with unique QR codes, 
+  and monitor real-time attendance.
+
+- **Mobile Application**: Built using Flutter, this mobile app enables desk agents to check in attendees by scanning QR codes and 
+  manually adding attendees if needed. This feature ensures secure and swift entry management, even for large-scale events.
+
+- **Backend & Database**: Our backend is powered by Express.js and Node.js, while data management is handled by PostgreSQL. 
+  This configuration provides a stable, secure, and scalable environment, enabling real-time data synchronization and reliable performance.
+
+- **Sentiment Analysis for Feedback**: Leveraging AI, we integrated a sentiment analysis feature that interprets feedback from 
+  attendees post-event. This feature helps event organizers quickly assess the attendee experience, categorizing feedback as positive, 
+  neutral, or negative.
+![use case diagram](/diagrams/ARCHITECTURE.PNG)
+
+## Project Methodology: Agile & Scrum
+
+To handle the complexity of this project, we used Scrum, dividing the work into six sprints. Using Azure Boards, we assigned tasks, 
+set priorities, and tracked progress, ensuring continuous communication and feedback within the team.
+
+## Development Highlights
+
+Working on this project involved several challenges and learning opportunities. Key milestones included:
+
+- **Architectural Design**: We chose a layered architecture (presentation, business logic, and data layers) to ensure isolation and 
+  flexibility. This setup allowed us to make changes easily, without impacting other layers.
+
+- **User-Friendly UI Design**: We developed an intuitive interface for both web and mobile applications, making it easy for event managers 
+  to navigate and use all functionalities, from event creation to post-event feedback.
+
+- **Automated Testing**: To ensure the system’s reliability, we employed automated testing frameworks, such as Vitest for unit tests and 
+  Cypress for end-to-end testing. These tests helped us verify security, usability, and system performance.
+
+## Future Enhancements
+
+Our project opens doors to several future possibilities. We envision adding more advanced analytics, implementing AI-powered resource planning, 
+and creating a fully automated check-in system that would use facial recognition. Additionally, we could expand the system to support 
+multilingual capabilities and custom branding for different users.
+
+## Conclusion
+
+Through this project, I had an invaluable opportunity to lead and collaborate with a skilled team, pushing the boundaries of event management technology. 
+Working with Orange Digital Center, we successfully created a digital event management system that simplifies the event lifecycle, enhances security, 
+and provides rich insights into attendee feedback.
+
+**Tags**: #EventManagement #ProjectShowcase #SoftwareDevelopment #AI #Reactjs #Flutter
