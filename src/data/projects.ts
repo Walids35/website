@@ -10,16 +10,17 @@ export const projects = [
         title: 'MYSTORE | E-Commerce System',
         description: 'This e-commerce system aims to enhance user convenience and admin control through efficient product organization, streamlined order processing, monthly analytics, and integrated payment with Stripe.',
         image: '/projects/ecommerce.PNG',
-        keywords: ['NextJS', 'MongoDB','Stripe API', 'NextAuth', 'Vercel'],
+        keywords: ['NextJS', 'MongoDB','Stripe API', 'NextAuth', 'Vercel', 'RabbitMQ'],
         website: 'https://ecommerceapp-ten.vercel.app/',
         adminwebsite: 'https://e-commerce-admin-d2nz.vercel.app/'
     },
     {
-        title: 'Renewable Energy Analysis Software',
-        description: 'Renewable energy software in order to analyze the water consumption, electricity consumption, vehicle consumption for companies to their employees. ',
-        image: '/projects/renewable-analysis.PNG',
-        source: "https://github.com/Walids35/Renewable-Energy-Analysis",
-        keywords: ['NextJS', 'MongoDB','Docker','ShadcnUI']
+        title: 'Nav-SMU: AR Indoor Navigation App',
+        description: 'Nav-SMU is an augmented reality indoor navigation app that helps students navigate the SMU campus with ease, providing real-time directions and information on nearby facilities.',
+        source: 'https://github.com/Sarraj-Sahar/Indoor-Navigation',
+        image: '/projects/nav-smu.PNG',
+        website:'https://drive.google.com/file/d/1-KO5EbnC6ZFqR0uGT6O_Vhh1DocyjYEQ/view?resourcekey',
+        keywords: ['Kotlin', 'SceneView AR', 'Firebase', 'Android Studio', 'A* Algorithm']
     },
     {
         title: 'DARBABA | Retirement Home Website',
@@ -36,5 +37,12 @@ export const projects = [
         url: 'https://www.darbaba.com',
         figma: 'https://www.figma.com/design/FsTaWLvrcBkzIgidGm6HQ4/Locads-Design?node-id=0-1&t=eFecdZ55eCA1bCOM-1',
         keywords: ['NextJS', 'SSG','SEO optimization','MDX', 'Figma','Responsive']
+    },
+    {
+        title: 'Renewable Energy Analysis Software',
+        description: 'Renewable energy software in order to analyze the water consumption, electricity consumption, vehicle consumption for companies to their employees. ',
+        image: '/projects/renewable-analysis.PNG',
+        source: "https://github.com/Walids35/Renewable-Energy-Analysis",
+        keywords: ['NextJS', 'MongoDB','Docker','ShadcnUI']
     },
 ]
