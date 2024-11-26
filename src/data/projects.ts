@@ -10,7 +10,7 @@ export const projects = [
         title: 'DevOps | AWS Cloud Infrastructure Project',
         description: 'Designed, implemented, and deployed a scalable, fault-tolerant, and highly available cloud-based application using AWS. ',
         source: 'https://github.com/Walids35/aws-project',
-        image: '/projects/AWS.PNG',
+        image: '/projects/AWS.png',
         keywords: ['AWS Services', 'Anomaly Detection Model', 'Terraform', 'GitHub Actions', 'Docker']
     },
     {
