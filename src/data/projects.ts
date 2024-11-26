@@ -7,6 +7,13 @@ export const projects = [
         keywords: ['React', 'Typescript', 'NodeJS', 'PostgreSQL', 'Sentiment Analysis', "Docker","Vitest"]
     },
     {
+        title: 'DevOps | AWS Cloud Infrastructure Project',
+        description: 'Designed, implemented, and deployed a scalable, fault-tolerant, and highly available cloud-based application using AWS. ',
+        source: 'https://github.com/Walids35/aws-project',
+        image: '/projects/AWS.PNG',
+        keywords: ['AWS Services', 'Anomaly Detection Model', 'Terraform', 'GitHub Actions', 'Docker']
+    },
+    {
         title: 'MYSTORE | E-Commerce System',
         description: 'This e-commerce system aims to enhance user convenience and admin control through efficient product organization, streamlined order processing, monthly analytics, and integrated payment with Stripe.',
         image: '/projects/ecommerce.PNG',
