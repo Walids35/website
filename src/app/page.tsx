@@ -40,18 +40,23 @@ export default function Home() {
                 </Button>
               </Link>
               <div className="flex gap-5 items-center text-gray-600 dark:text-gray-400">
+                <Link href="https://www.linkedin.com/in/walid-siala-/">
                 <Linkedin
                   className="dark:hover:text-white hover:text-black hover:cursor-pointer"
                   size={20}
-                />
+                /></Link>
+                <Link href="https://github.com/Walids35">
                 <Github
                   className="dark:hover:text-white hover:text-black hover:cursor-pointer"
                   size={20}
                 />
+                </Link>
+                <Link href="walid.siala@medtech.tn">
                 <Mail
                   className="dark:hover:text-white hover:text-black hover:cursor-pointer"
                   size={20}
                 />
+                </Link>
               </div>
             </div>
           </div>

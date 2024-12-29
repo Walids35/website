@@ -14,6 +14,13 @@ export const projects = [
         keywords: ['AWS Services', 'Anomaly Detection Model', 'Terraform', 'GitHub Actions', 'Docker']
     },
     {
+        title: 'Transformer-based Automatic Speech Recognition (ASR)',
+        description: 'Intelligent Meeting Notes Assistant aims to automate the generation of structured meeting summaries from audio recordings of city council meetings.',
+        source: 'https://github.com/Walids35/asr-transformer-based',
+        image: '/projects/transformer-architecture.png',
+        keywords: ['Transformer', 'Keras', 'Tensorflow', 'Data preprocessing', 'Deep Learning']
+    },
+    {
         title: 'MYSTORE | E-Commerce System',
         description: 'This e-commerce system aims to enhance user convenience and admin control through efficient product organization, streamlined order processing, monthly analytics, and integrated payment with Stripe.',
         image: '/projects/ecommerce.PNG',
