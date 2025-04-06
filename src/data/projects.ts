@@ -4,6 +4,7 @@ export const projects = [
         description: 'Streamline event planning and attendee management with centralized, real-time tools for organizers.',
         image: '/projects/eventmana.PNG',
         source: 'https://github.com/MedtechSeniorProject',
+        website: 'https://drive.google.com/file/d/1jZNFXhpEeuIT8piCO6v-q5rUIbbwZNZ8/view?usp=sharing',
         keywords: ['React', 'Typescript', 'NodeJS', 'PostgreSQL', 'Sentiment Analysis', "Docker","Vitest"]
     },
     {
