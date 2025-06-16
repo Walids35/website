@@ -1,5 +1,13 @@
 export const work = [
     {
+      "date": "Mars 2025 - Present",
+        "image": "/company-logos/SNTT.png",
+        "company": "SNT, University of Luxembourg",
+        "position": "Machine Learning Engineer - Intern",
+        "description": [],
+        "keywords": ["NLP - Sentiment Analysis", "Time-series models", "EDA", "Python", "Pandas", "Scikit-learn"]  
+    },
+    {
         "date": "July 2024 - July 2024",
         "image": "/company-logos/EY.png",
         "company": "EY",
