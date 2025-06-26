@@ -1,7 +1,8 @@
 // app/api/metrics/route.ts or wherever your endpoint lives
 import { register, httpRequestCounter, uptimeGauge } from '@/lib/metrics'; // adjust path
 
-export async function GET() {
+export async function GET(request: Request) {
+  console.log(request.method, request.url);
   // Update metrics
   httpRequestCounter.inc({ method: 'GET', endpoint: '/metrics' });
   uptimeGauge.set(process.uptime());
