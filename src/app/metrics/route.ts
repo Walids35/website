@@ -1,13 +1,25 @@
-// app/api/metrics/route.ts or wherever your endpoint lives
-import { register, httpRequestCounter, uptimeGauge } from '@/lib/metrics'; // adjust path
+import {
+  register,
+  httpRequestCounter,
+  uptimeGauge,
+  trackIP
+} from '@/lib/metrics';
 
-export async function GET(request: Request) {
-  console.log(request.method, request.url);
-  // Update metrics
+export async function GET(req: Request) {
+  // Track request
   httpRequestCounter.inc({ method: 'GET', endpoint: '/metrics' });
   uptimeGauge.set(process.uptime());
 
-  // Expose metrics in Prometheus text format
+  // Estimate active IPs (via headers)
+  const ip =
+    req.headers.get('x-forwarded-for')?.split(',')[0].trim() || // handle multiple IPs
+    req.headers.get('x-real-ip') ||
+    'unknown';
+
+  if (ip !== 'unknown') {
+    trackIP(ip);
+  }
+
   const metrics = await register.metrics();
 
   return new Response(metrics, {
