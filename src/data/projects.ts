@@ -34,7 +34,7 @@ export const projects = [
         description: 'Nav-SMU is an augmented reality indoor navigation app that helps students navigate the SMU campus with ease, providing real-time directions and information on nearby facilities.',
         source: 'https://github.com/Sarraj-Sahar/Indoor-Navigation',
         image: '/projects/nav-smu.PNG',
-        website:'https://drive.google.com/file/d/1-KO5EbnC6ZFqR0uGT6O_Vhh1DocyjYEQ/view?resourcekey',
+        website:'https://drive.google.com/file/d/1thz5MIcusmQj1rXVxLIH8Vrp9aldI1XM/view?usp=drive_link',
         keywords: ['Kotlin', 'SceneView AR', 'Firebase', 'Android Studio', 'A* Algorithm']
     },
     {
