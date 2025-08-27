@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://walid-siala.com"),
   title: "Walid Siala Portfolio",
   description:
-    "Walid Siala, 21-year-old software engineer from Tunisia TN. I like to develop full-stack, drink instant coffee and get coding advice from the world.",
+    "Walid Siala, 22-year-old software engineer living in Luxembourg LU. I like to develop full-stack, drink instant coffee and get coding advice from the world.",
   keywords: [
     "Walid Siala",
     "Walid Siala Portfolio",
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "siala",
     "tunis",
     "tunisia",
+    "luxembourg",
     "developer",
     "full stack",
     "nextjs",

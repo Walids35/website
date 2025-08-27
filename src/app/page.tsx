@@ -18,7 +18,7 @@ export default function Home() {
               hi walid here &#128527;
             </h1>
             <div className="max-w-lg leading-5">
-              22-year-old software engineer from Tunisia TN living in Luxembourg LU <br></br> <br></br>{" "}
+              22-year-old software engineer living in Luxembourg LU <br></br> <br></br>{" "}
               <p className="text-justify">I enjoy designing and developing software solutions that can be applied across diverse domains — from healthcare and medical research to weather forecasting, finance, and beyond. </p>
             </div>
             <div className="flex gap-2 items-center">
