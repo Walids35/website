@@ -13,7 +13,7 @@ export const projects = [
         image: '/projects/chefstore.PNG',
         source: 'https://github.com/Walids35/ecommerce-backend',
         website: 'https://chefstore.tn/',
-        keywords: ['NextJS', 'Typescript', 'NodeJS', 'PostgreSQL', "Docker Compose", "DevSecOps", "Unit & Integration Testing"]
+        keywords: ['NextJS', 'Typescript', 'NodeJS', 'PostgreSQL', "Docker Compose", "DevSecOps", "Unit & Integration Testing", "Grafana", "Prometheus"]
     },
     {
         title: 'Event Management System',
