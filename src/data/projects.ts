@@ -1,5 +1,21 @@
 export const projects = [
     {
+        title: 'Impact of LLMs News Sentiment Analysis on Stock Price Movement Prediction',
+        description: 'Paper accepted at ICLR 2026 that presents a comprehensive evaluation study at the intersection of NLP and quantitative finance, comparing three LLM-based sentiment models and integrating them with state-of-the-art time-series architectures for stock movement prediction.',
+        image: '/projects/iclr.jpg',
+        source: 'https://github.com/Walids35/capstone-stock-prediction',
+        website: 'https://arxiv.org/abs/2602.00086',
+        keywords: ['NLP', 'Sentiment Models', 'Data processing', 'Data Engineering', "Time Series prediction", "Research", "Finance"]
+    },
+    {
+        title: 'ChefStore Ecommerce Solution',
+        description: 'A front and back-office ecommerce software solution for a restaurant equipment distributor, handling product management, order processing, and customer interactions to enhance user experience and streamline operations.',
+        image: '/projects/chefstore.PNG',
+        source: 'https://github.com/Walids35/ecommerce-backend',
+        website: 'https://chefstore.tn/',
+        keywords: ['NextJS', 'Typescript', 'NodeJS', 'PostgreSQL', "Docker Compose", "DevSecOps", "Unit & Integration Testing"]
+    },
+    {
         title: 'Event Management System',
         description: 'Streamline event planning and attendee management with centralized, real-time tools for organizers.',
         image: '/projects/eventmana.PNG',
