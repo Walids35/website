@@ -1,11 +1,22 @@
 export const work = [
     {
-      "date": "Mars 2025 - Present",
+        "date": "June 2026 - Now",
+        "image": "/company-logos/wasabi.png",
+        "company": "Wasabi Technologies",
+        "position": "EMEA Sales",
+        "description": [],
+        "keywords": ["Cloud Storage", "SaaS", "Customer Success", "Sales", "Account Management"] 
+    },
+    {
+      "date": "Mars 2025 - Nov 2025",
         "image": "/company-logos/SNTT.png",
         "company": "SNT, University of Luxembourg",
         "position": "Machine Learning Engineer - Intern",
-        "description": [],
-        "keywords": ["NLP - Sentiment Analysis", "Time-series models", "EDA", "Python", "Pandas", "Scikit-learn"]  
+        "description": ["Paper Accepted at ICLR2026",
+            "Conducted a comprehensive evaluation study at the intersection of NLP and quantitative finance, comparing three LLM-based sentiment models and integrating them with state-of-the-art time-series architectures for stock movement prediction.",
+            "Implemented data processing pipelines, performed exploratory data analysis (EDA), and developed machine learning models using Python, Pandas, and Scikit-learn to analyze the impact of LLMs news sentiment analysis on stock price movement prediction."
+        ],
+        "keywords": ["NLP - Sentiment Analysis", "Time-series models", "EDA", "Python", "Pytorch", "Scikit-learn"]  
     },
     {
         "date": "July 2024 - July 2024",

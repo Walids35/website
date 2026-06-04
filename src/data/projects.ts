@@ -10,7 +10,7 @@ export const projects = [
     {
         title: 'ChefStore Ecommerce Solution',
         description: 'A front and back-office ecommerce software solution for a restaurant equipment distributor, handling product management, order processing, and customer interactions to enhance user experience and streamline operations.',
-        image: '/projects/chefstore.PNG',
+        image: '/projects/chefstore.png',
         source: 'https://github.com/Walids35/ecommerce-backend',
         website: 'https://chefstore.tn/',
         keywords: ['NextJS', 'Typescript', 'NodeJS', 'PostgreSQL', "Docker Compose", "DevSecOps", "Unit & Integration Testing", "Grafana", "Prometheus"]
